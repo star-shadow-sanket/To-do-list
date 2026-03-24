@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevCraft | Intermediate Web Project</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">DevCraft</span>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+      <span class="logo-text">DevCraft</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#todo" class="nav-link">To-Do</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <!-- Animated background orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <i class="fa-solid fa-star"></i> Intermediate HTML · CSS · JavaScript
+      </div>
+      <h1 class="hero-title reveal">
+        Build beautiful<br/>
+        <span class="gradient-text">web experiences</span><br/>
+        that matter.
+      </h1>
+      <p class="hero-desc reveal">
+        A full-featured, responsive web project showcasing modern DOM manipulation,
+        form validation, and adaptive layouts — crafted with intention.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane"></i> Get In Touch
+        </a>
+        <a href="#todo" class="btn btn-ghost">
+          <i class="fa-solid fa-list-check"></i> View Tasks
+        </a>
+      </div>
+
+      <!-- Stats row -->
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="4">0</span>
+          <span class="stat-label">Sections</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Responsive</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="0">0</span>
+          <span class="stat-label">Dependencies</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="code-window">
+        <div class="code-window-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-window-title">script.js</span>
+        </div>
+        <pre class="code-block"><code><span class="c-kw">const</span> <span class="c-fn">buildProject</span> = () <span class="c-kw">=></span> {
+  <span class="c-kw">const</span> skills <span class="c-kw">=</span> [
+    <span class="c-str">'HTML5'</span>,
+    <span class="c-str">'CSS3'</span>,
+    <span class="c-str">'JavaScript'</span>,
+    <span class="c-str">'DOM Magic'</span>
+  ];
+
+  skills.<span class="c-fn">forEach</span>(skill <span class="c-kw">=></span>
+    console.<span class="c-fn">log</span>(<span class="c-str">`✓ ${skill}`</span>)
+  );
+
+  <span class="c-kw">return</span> <span class="c-str">'🚀 Launched!'</span>;
+};</code></pre>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES STRIP ===== -->
+  <section class="features-strip">
+    <div class="features-track">
+      <span><i class="fa-solid fa-wand-magic-sparkles"></i> CSS Animations</span>
+      <span><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span>
+      <span><i class="fa-solid fa-shield-halved"></i> Form Validation</span>
+      <span><i class="fa-solid fa-database"></i> Local Storage</span>
+      <span><i class="fa-solid fa-palette"></i> Dark Mode</span>
+      <span><i class="fa-solid fa-grid-2"></i> CSS Grid</span>
+      <span><i class="fa-solid fa-layer-group"></i> Flexbox</span>
+      <span><i class="fa-solid fa-code"></i> DOM Manipulation</span>
+      <!-- Duplicated for seamless loop -->
+      <span><i class="fa-solid fa-wand-magic-sparkles"></i> CSS Animations</span>
+      <span><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span>
+      <span><i class="fa-solid fa-shield-halved"></i> Form Validation</span>
+      <span><i class="fa-solid fa-database"></i> Local Storage</span>
+      <span><i class="fa-solid fa-palette"></i> Dark Mode</span>
+      <span><i class="fa-solid fa-grid-2"></i> CSS Grid</span>
+      <span><i class="fa-solid fa-layer-group"></i> Flexbox</span>
+      <span><i class="fa-solid fa-code"></i> DOM Manipulation</span>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact-section">
+    <div class="section-header reveal">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-title">Let's <span class="gradient-text">talk.</span></h2>
+      <p class="section-sub">Send a message and I'll get back to you shortly.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Info Cards -->
+      <div class="contact-info reveal">
+        <div class="info-card">
+          <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <p>hello@devcraft.io</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <h4>Location</h4>
+            <p>Remote — Worldwide</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+          <div>
+            <h4>Response Time</h4>
+            <p>Within 24 hours</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-btn" aria-label="CodePen"><i class="fa-brands fa-codepen"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="form-wrapper reveal">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="off"/>
+            </div>
+            <span class="field-error" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-at"></i>
+              <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="off"/>
+            </div>
+            <span class="field-error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <div class="input-wrap textarea-wrap">
+              <i class="fa-solid fa-message"></i>
+              <textarea id="message" name="message" placeholder="Write your message here…" rows="5"></textarea>
+            </div>
+            <span class="field-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+            <span class="btn-loading"><i class="fa-solid fa-circle-notch fa-spin"></i> Sending…</span>
+          </button>
+
+          <!-- Success / Error Toast -->
+          <div class="form-toast" id="formToast"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TO-DO LIST SECTION ===== -->
+  <section id="todo" class="todo-section">
+    <div class="section-header reveal">
+      <span class="section-tag">Productivity</span>
+      <h2 class="section-title">Your <span class="gradient-text">Tasks.</span></h2>
+      <p class="section-sub">Add, complete, and delete tasks — saved automatically.</p>
+    </div>
+
+    <div class="todo-container reveal">
+      <!-- Add Task Input -->
+      <div class="todo-input-row">
+        <div class="todo-input-wrap">
+          <i class="fa-solid fa-pen-to-square"></i>
+          <input type="text" id="taskInput" placeholder="Add a new task…" maxlength="120"/>
+        </div>
+        <button class="btn btn-primary" id="addTaskBtn">
+          <i class="fa-solid fa-plus"></i> Add
+        </button>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="todo-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <!-- Task List -->
+      <ul class="task-list" id="taskList">
+        <!-- Tasks rendered by JS -->
+      </ul>
+
+      <!-- Footer Bar -->
+      <div class="todo-footer">
+        <span id="taskCount">0 tasks left</span>
+        <button class="clear-btn" id="clearCompleted">
+          <i class="fa-solid fa-broom"></i> Clear Completed
+        </button>
+      </div>
+
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState">
+        <i class="fa-solid fa-clipboard-list"></i>
+        <p>No tasks here. Add one above!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <i class="fa-solid fa-code"></i> DevCraft
+      </div>
+      <p class="footer-copy">
+        Built with <i class="fa-solid fa-heart" style="color:#e55e5e"></i> using HTML, CSS &amp; JavaScript.<br/>
+        &copy; <span id="year"></span> ApexPlanet Software Pvt Ltd. All rights reserved.
+      </p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#todo">Tasks</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
